@@ -1,0 +1,186 @@
+Line wrap
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+<div class="header-content">
+<img src="sathvik.jpg" alt="Your profile picture" class="profile">
+<h1>It's v.sathvik</h1>
+<p>I'm a Web Developer.</p>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<nav>
+<ul>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#education">EDUCATION</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#projects">PROJECTS</a></li>
+<li><a href="#resume">RESUME</a></li>
+<li><a href="#contacts">CONTACT</a></li>
+</ul>
+</nav>
+
+<section id="about">
+<div class="section-content">
+<h2>About Me:</h2>
+<p>Hello Everyone! This is Sathvik, a 19-year-old student from SRM University, currently in my third year of the Computer Science and Engineering (CSE) branch.<br>
+I am passionate about movies, cricket, music and I also enjoy learning new skills. My hobbies reflect my diverse interests, and I enjoy spending my free time exploring new films, following cricket matches,
+and listening to my favorite songs and acquiring new skills. As I continue my education, I aim to deepen my knowledge and skills in the field of computer science while also indulging in my love for entertainment and sports.</p>
+</div>
+</section>
+
+<section id="education">
+<div class="section-content">
+<h2>Education:</h2>
+<center>
+<table border="1" cellpadding="5" cellspacing="5">
+<tr>
+<th>SNo.</th>
+<th>Institute Name</th>
+<th>Place</th>
+<th>Year</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>SRM UNIVERSITY</td>
+<td>Amaravathi, AP</td>
+<td>In Progress</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>SRI CHAITANYA JR COLLEGE</td>
+<td>Vijayawada, AP</td>
+<td>2020 - 2022</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>DR.kkr's consept SCHOOL</td>
+<td>Gudivada, AP</td>
+<td>2015 - 2020</td>
+</tr>
+</table>
+</center>
+</div>
+</section>
+
+<section id="skills">
+<div class="section-content">
+<h2>Skills:</h2>
+<ul type="circle">
+<li>Programming Languages</li>
+<ol type="1">
+<li>C, C++, Python</li>
+<li>HTML, CSS, JavaScript, PHP.</li>
+</ol>
+<li>Data Structures and Algorithms, OOPS with C++, SQL.</li>
+<li>Design and Analysis of Algorithms.</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-content">
+<h2>Projects:</h2>
+<div class="work-container">
+
+
+<div class="work-info">
+<h4>Library Management System </h1>
+<p>
+A Library Management System to manage & track the daily work of the library . <br>
+Skills Used: Using DS in C.
+</p>
+</div>
+<div class="work-info">
+<h4>Dictionary Management System</h1>
+<p>
+A Dictionary Management System to load and update the dictionaries in Argus. <br>
+Skills Used: Using OOPS in C++ .
+</p>
+</div>
+<div class="work-info">
+<h4>Online Book Store Website </h1>
+<p>
+Customers can shop online for books at the Online Book Store using a web browser.. <br>
+Skills Used: HTML, CSS, JavaScript, PHP, MY SQL.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="resume">
+<div class="section-content">
+<h2>Resume:</h2>
+<p>Have a look! at my Resume.<br><br>
+Just Click on 'Download Resume' button to Download my Resume.
+</p>
+<center>
+<a href="AP22110010720_VADAPALLISATHVIK.pdf" class="download-button" target="_blank">Download Resume</a>
+</center>
+</div>
+</section>
+
+<section id="contacts">
+<div class="section-content">
+<h2>Contact:</h2>
+<div class="social-media">
+<ul>
+<li><a href="https://www.linkedin.com/in/sathvik-vadapalli-336ab92b4//" target="_blank" ><i class='bx bxl-linkedin-square' ></i></a>Linkedin</li>
+<li><a href="https://www.instagram.com/babloo_buoyy/?hl=en" target="_blank"><i class='bx bxl-instagram' target="_blank"></i></a>Instagram</li>
+<li><a href="https://github.com/sathvik044"><i class='bx bxl-github' ></i></a>Github</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer>
+<marquee><p>&copy; 2024 Thanks for visiting my portfolio - Have a Great Day.</p></marquee>
+</footer>
+
+<button class="top-button" id="top-button">Top</button>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+
+const topButton = document.getElementById('top-button');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 300) {
+topButton.style.display = 'block';
+} else {
+topButton.style.display = 'none';
+}
+});
+
+topButton.addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+</script>
+</body>
+</html>
